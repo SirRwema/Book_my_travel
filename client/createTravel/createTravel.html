@@ -1,0 +1,25 @@
+<template name="createTravel">
+<div class="row col-md-6 col-md-offset-3 top-space">
+    <div class="col-md-12 well well-sm">
+        <form action="#" method="post" class="form"
+        id="signup-form" role="form">
+            <div class="error"></div>
+            <input class="form-control" name="name" type="text" placeholder="Name" required />
+            <input class="form-control" name="agency" placeholder="Agency Name"  required />
+            <input class="form-control" name="seats" type="number" placeholder="No. of seats" required />
+            <div class="row">
+                <div class="col-xs-6 col-md-6"><input class="formcontrol" name="startpoint" type="text" placeholder="Source(Startpoint)" required /></div>
+                <div class="col-md-6"><input class="formcontrol" name="endpoint" type="text" placeholder="Destination(Endpoint)" required /></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"><input class="form-control" name="startdate" type="date" required /></div>
+                <div class="col-md-3"><input class="form-control" name="starttime" type="time" required /></div>
+                <div class="col-md-3"> <input class="form-control" name="enddate" type="date" required /></div>
+                <div class="col-md-3"><input class="form-control" name="endtime" type="time" required /></div>
+            </div>
+            <input class="form-control" name="fare" type="number" placeholder="Ticket Price(Min 100)"  required />
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
+        </form>
+    </div>
+</div>
+</template>
